@@ -6,22 +6,23 @@ cloud IA par défaut.
 
 ## Télécharger
 
-**[Prism v0.0.2 — APK debug](https://github.com/ilkinsem/Prism-Releases/releases/download/v0.0.2/app-debug.apk)**
+**[Prism v0.0.3 — APK debug](https://github.com/ilkinsem/Prism-Releases/releases/download/v0.0.3/app-debug.apk)**
 
 - Android 8.0+ (`minSdk 26`), cible Android 15 (`targetSdk 35`).
 - APK signé debug, à installer en sideload (autoriser les sources inconnues).
-- Taille : ~70 Mo. SHA-256 : `cc1f05e63671246d1b6dc5a1ed941ad6584581aa5e94cab90972565469544589`.
+- Taille : ~71 Mo. SHA-256 : `c9f408ee0e581121a46266bb803c9f3af4d4198f730e939c1d08277c8b5ad6d2`.
 
 Le dépôt de code source est **privé**. Ce dépôt public ne contient que les APK et leurs notes.
 
-## Nouveautés v0.0.2
+## Nouveautés v0.0.3
 
-- **Scanner le téléphone** : balayage récursif d'un dossier choisi via SAF, ou option avancée
-  « tous les fichiers » (consentement Android explicite) pour parcourir la racine/Téléchargements.
-  Filtres PDF/Word/Images/Texte, sélection, import et progression.
-- **Gestes Documents** : glisser une ligne à gauche ou à droite, ou toucher « … », pour révéler
-  les actions (corbeille, couper/déplacer, tag, partage, favori). Aucune suppression immédiate.
-- Correction du libellé « Documents » de la barre basse et validation du nom de dossier.
+- **Mises à jour** : vérification au démarrage, au retour au premier plan après 6 h, et manuelle
+  dans Réglages. Bandeau non modal + téléchargement de l'APK via le navigateur.
+  Requête HTTPS vers GitHub Releases, sans identifiant ni contenu documentaire.
+- **Champs et filtres sans contour** : fonds distincts en clair/sombre, plus aucune bordure.
+- **Scanner le téléphone** (v0.0.2) : dossier SAF ou option « tous les fichiers » consentie.
+- **Gestes Documents** (v0.0.2) : swipe ou « … » pour corbeille et couper/déplacer.
+- Correction du libellé « Documents » et validation du nom de dossier.
 - Démarrage allégé (initialisation paresseuse PDFBox/ML Kit).
 
 ## Inclus
@@ -48,10 +49,14 @@ Google Play avant une distribution publique.
 ## Vérifications
 
 - E2E Compose : 7/7 (navigation, lecteur, dossiers, assistant, recherche, purge, swipe, scan).
+- Vérification réelle des mises à jour contre l'API GitHub Releases.
 - Couverture : domaine 91,8 %, core common 85,1 %.
 - Build, installation et lancement vérifiés sur émulateur API 35.
 
 ![Accueil](docs/home-fr.png)
+![Bandeau de mise à jour](docs/update-banner.png)
+![Réglages des mises à jour](docs/settings-update.png)
+![Champs sans contour](docs/fields-light.png)
 ![Scan du téléphone](docs/scan-phone-en.png)
 
-Nom « Prism » provisoire. Version 0.0.2.
+Nom « Prism » provisoire. Version 0.0.3.
