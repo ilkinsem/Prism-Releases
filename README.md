@@ -6,23 +6,22 @@ cloud IA par défaut.
 
 ## Télécharger
 
-**[Prism v0.0.4 — APK debug](https://github.com/ilkinsem/Prism-Releases/releases/download/v0.0.4/app-debug.apk)**
+**[Prism v0.0.5 — APK debug](https://github.com/ilkinsem/Prism-Releases/releases/download/v0.0.5/app-debug.apk)**
 
 - Android 8.0+ (`minSdk 26`), cible Android 15 (`targetSdk 35`).
 - APK signé debug, à installer en sideload (autoriser les sources inconnues).
-- Taille : ~70 Mo. SHA-256 : `373307338bde8d2e9e7c127fc6b908403aac4d9d209aec39f21d07ebe9459f5b`.
+- Taille : ~71 Mo. SHA-256 : `de40f9c01467369a122d356c4a64e8a8f5d6e6e5f0b2dd20a189b75af5be9d73`.
 
 Le dépôt de code source est **privé**. Ce dépôt public ne contient que les APK et leurs notes.
 
-## Nouveautés v0.0.4
+## Nouveautés v0.0.5
 
-- **Splash** : fond dégradé sombre, logo Prism, nom, tagline et indicateur de chargement.
-- **Accueil** : logo, « Bonjour ! » / « Que souhaitez-vous faire ? », vignettes d'actions avec
-  pictogrammes outlined et fonds tonaux.
-- **Scanner** : viseur haut (≈58 % de l'écran), repères de cadrage, obturateur, galerie et modes
-  Document/Carte/Photo.
-- **Retour Accueil corrigé** après « Mes dossiers ».
-- **Accueil documents** : swipe ou « … » pour ouvrir, favori, partager, corbeille.
+- **Recadrage avant PDF** : après une photo ou un import d'image, déplacez les 4 coins pour
+  corriger la perspective, choisissez Couleur/Gris/Noir & blanc, saisissez le titre du document,
+  puis validez la page. Le PDF utilise l'image recadrée et le rendu choisi.
+- Imports multiples : file d'attente, « Reprendre » passe à l'image suivante.
+- Rappel v0.0.4 : splash sombre, accueil logo/Bonjour, scanner haut, navigation corrigée,
+  swipe et « … » sur l'accueil.
 - Rappel v0.0.3 : mises à jour au démarrage/manuel, champs sans contour.
 - Rappel v0.0.2 : scan du téléphone, gestes Documents.
 
@@ -63,10 +62,12 @@ Google Play avant une distribution publique.
 
 ![Accueil v0.0.4](docs/home-v040.png)
 ![Scanner v0.0.4](docs/scanner-v040.png)
+![Recadrage v0.0.5](docs/review-v050.png)
+![Pages v0.0.5](docs/pages-v050.png)
 ![Accueil](docs/home-fr.png)
 ![Bandeau de mise à jour](docs/update-banner.png)
 ![Réglages des mises à jour](docs/settings-update.png)
 ![Champs sans contour](docs/fields-light.png)
 ![Scan du téléphone](docs/scan-phone-en.png)
 
-Nom « Prism » provisoire. Version 0.0.4.
+Nom « Prism » provisoire. Version 0.0.5.
